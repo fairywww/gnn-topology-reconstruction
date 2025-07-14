@@ -1,0 +1,37 @@
+{
+  "experiment": {
+    "name": "GNN_Topology_Zoo_Link_Prediction",
+    "description": "使用GNN进行拓扑动物园数据集链接预测",
+    "version": "1.0.0"
+  },
+  "data": {
+    "data_dir": "topologyzoo-main/graphml",
+    "min_nodes": 10,
+    "max_nodes": 150,
+    "test_ratio": 0.1,
+    "val_ratio": 0.1
+  },
+  "model": {
+    "hidden_channels": 64,
+    "model_types": [
+      "gcn",
+      "gat",
+      "sage"
+    ],
+    "use_advanced_model": false,
+    "num_layers": 2
+  },
+  "training": {
+    "epochs": 300,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 100,
+    "use_scheduler": true
+  },
+  "experiment_setup": {
+    "max_graphs": 261,
+    "min_nodes_per_graph": 5,
+    "max_nodes_per_graph": 200,
+    "min_edges_per_graph": 5
+  }
+}
