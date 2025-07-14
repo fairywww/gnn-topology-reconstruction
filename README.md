@@ -60,5 +60,14 @@
 - **Q: 如何自定义实验？**
   - A: 可修改 `main.py` 或 `src/` 下相关脚本，支持自定义模型、数据等。
 
+## 文档转换工具
+- 本项目提供 `convert_to_word.py` 脚本，可将 Markdown 格式的实验报告（如 docs/GNN_拓扑还原实验报告.md）一键转换为 Word 文档，便于撰写和提交。
+- 使用方法：
+  ```bash
+  python3 convert_to_word.py
+  ```
+  生成的 Word 文件将保存在项目根目录。
+- 依赖：需安装 `python-docx`，已包含在 requirements.txt。
+
 ## 联系方式
 如有问题或合作意向，请通过GitHub Issue联系作者。 
