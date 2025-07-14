@@ -1,0 +1,17 @@
+gnn_topology/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.bak
+*.swp
+*.swo
+*.tmp
+*.log
+.env
+venv/
+.env*/
+.idea/
+.DS_Store 
